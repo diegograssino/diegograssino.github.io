@@ -24,7 +24,7 @@
     <!-- Custom Style -->
     <link rel="stylesheet" href="css/style.css" />
 
-    <title>DG27AR - Diego Grassino´s Portfolio</title>
+    <title>DG's Portfolio</title>
     <link rel="shortcut icon" type="image/jpg" href="/img/favicon.png" />
   </head>
   <body>
@@ -32,7 +32,9 @@
     <nav class="navbar navbar-expand-lg navbar-dark navbar-translucent border-0">
       <div class="container">
         <div class="container-fluid">
-          <a class="navbar-brand" href="https://dg27ar.github.io">DG27<i class="fas fa-meteor comet-green"></i>AR</a>
+          <a class="navbar-brand" href="https://diegograssino.site"
+            >DG <i class="fas fa-meteor comet-green"></i> PORTFOLIO</a
+          >
           <button
             class="navbar-toggler"
             type="button"
@@ -47,17 +49,23 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#home"><i class="fas fa-rocket mr-1"></i>Home</a>
+                <a class="nav-link" aria-current="page" href="#home"
+                  ><i class="fas fa-rocket mr-1"></i><span class="l-navbar-button-home">Home</span></a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about-me"><i class="fas fa-user-astronaut mr-1"></i>About Me</a>
+                <a class="nav-link" href="#about-me"
+                  ><i class="fas fa-user-astronaut mr-1"></i> <span class="l-navbar-button-about">About Me</span></a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#portfolio"><i class="fas fa-briefcase mr-1"></i>Portfolio</a>
+                <a class="nav-link" href="#portfolio"
+                  ><i class="fas fa-briefcase mr-1"></i> <span class="l-navbar-button-portfolio"></span>Portfolio</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact-me" tabindex="-1" aria-disabled="true"
-                  ><i class="fas fa-satellite mr-1"></i>Contact</a
+                  ><i class="fas fa-satellite mr-1"></i> <span class="l-navbar-button-contact">Contact</span></a
                 >
               </li>
 
@@ -92,13 +100,15 @@
         <div class="col-md-12 header-background">
           <div class="header-content header-text">
             <div class="header-title">
-              <h1 class="h3">My name is <strong>Diego Grassino</strong>,</h1>
+              <h1 class="h3 l-hero-text">My name is <strong>Diego Grassino</strong></h1>
             </div>
             <div class="header-subtext mt-2 header-subtitle">
-              <h5>and i'm a <strong>Web Developer</strong>.</h5>
+              <h5 class="l-hero-subtext">and i'm a <strong>Front End Developer</strong>.</h5>
             </div>
-            <div class="header-button mt-4 header-content-button">
-              <a class="btn btn-lg btn-info" href="#about-me">More About Me ...</a>
+            <div class="header-button mt-2 header-content-button">
+              <a class="btn btn-lg btn-info more-rounded button-purple l-hero-button" href="#about-me"
+                >More about me ...</a
+              >
             </div>
           </div>
         </div>
@@ -109,200 +119,258 @@
     <!-- About Me Start -->
 
     <div id="about-me"></div>
-    <section class="mt-5 mb-5">
-      <div class="container card my-5">
+    <section class="mt-5 mb-3">
+      <div class="container card more-rounded">
         <div class="row no-gutters">
-          <div class="col-md-4 short-info-card-img"></div>
+          <div class="col-md-4 more-rounded text-center">
+            <i class="fas fa-user-astronaut mt-5 mx-0" style="font-size: 16em; color: lightgreen"></i>
+          </div>
           <div class="col-md-8">
             <div class="card-body about-me-content">
-              <h4 class="card-title short-info-card-center text-white">About Me</h4>
-              <p class="card-text short-info-card-justify welcome-custom">
-                Hi, my name is Diego Grassino and i'm an Argentinian <strong>bilingual</strong> (spanish native, spoken
-                and written english) <strong>Web Developer</strong> with actual residence on Tucumán city (Argentina). I
-                consider myself a resource that <strong>add value</strong> to projects, someone who are in
-                <strong>constant learning</strong> and with many years of experience in other fields like: team
-                leadership, sales or education that <strong>can give a plus</strong> in many situations. Actually i'm
-                working as freelance web developer making web layout (<strong>HTML + CSS + JavaScript</strong>) and
-                custom themes in <strong>Wordpress</strong>. I'm in progress of learning <strong>React</strong> and
+              <h4 class="card-title short-info-card-center text-white l-about-title">About me</h4>
+              <p class="card-text short-info-card-justify welcome-custom l-about-text">
+                Hi, my name is Diego Grassino and i am a <strong>Front End Developer</strong>,
+                <strong>bilingual</strong> (spanish native, spoken and written english), actually with residence in
+                Argentina (San Miguel de Tucumán). I consider myself a resource that <strong>add value</strong> to
+                projects, someone who are in <strong>constant learning</strong> and with many years of experience in
+                other fields like: team leadership, sales or education that <strong>can give a plus</strong> in many
+                situations. Actually i'm working as freelance web developer creating web sites and custom themes in
+                <strong>Wordpress</strong>. I'm in progress of learning <strong>React</strong> and
                 <strong>Node.js</strong> to improve my skills. You can view some of my works in Portfolio section, or if
-                you are interested in my profile, fell free to contact me. ¡Thanks for visiting!.
+                you are interested in my profile, feel free to contact me. ¡Thanks for visiting!.
               </p>
-              <div class="container row">
-                <div class="col-4 short-info-card-center"><span class="badge badge-warning">#HTML5</span></div>
-                <div class="col-4 short-info-card-center"><span class="badge badge-primary">#CSS</span></div>
-                <div class="col-4 short-info-card-center">
-                  <span class="badge badge-primary badge-color-goldenrod">#JAVASCRIPT</span>
+              <div class="row">
+                <div class="col-12 text-center">
+                  <span class="badge badge-pill badge-primary sandia mx-1 my-1" style="font-size: 1.1em">#HTML</span>
+                  <span class="badge badge-pill badge-primary sandia mx-1 my-1" style="font-size: 1.1em">#CSS</span>
+                  <span class="badge badge-pill badge-primary sandia mx-1 my-1" style="font-size: 1.1em"
+                    >#JAVASCRIPT</span
+                  >
+                  <span class="badge badge-pill badge-primary sandia mx-1 my-1" style="font-size: 1.1em"
+                    >#WORDPRESS</span
+                  >
+                  <!-- <span class="badge badge-pill badge-primary sandia mx-2" style="font-size: 1.1em">#</span> -->
                 </div>
-                <div class="col-4 short-info-card-center"><span class="badge badge-primary">#RESPONSIVE</span></div>
-                <div class="col-4 short-info-card-center"><span class="badge badge-info">#BOOTSTRAP</span></div>
-                <div class="col-4 short-info-card-center"><span class="badge badge-primary">#WORDPRESS</span></div>
-                <div class="col-4 short-info-card-center"><span class="badge badge-primary">#WEB LAYOUT</span></div>
-                <div class="col-4 short-info-card-center"><span class="badge badge-primary">#WEB DESIGN</span></div>
-                <div class="col-4 short-info-card-center"><span class="badge badge-danger">#GIT</span></div>
-                <div class="col-4 short-info-card-center"><span class="badge badge-success">#ENGLISH</span></div>
-                <div class="col-4 short-info-card-center"><span class="badge badge-success">#ESPAÑOL</span></div>
-                <div class="col-4 short-info-card-center"><span class="badge badge-success">#EXPERIENCE</span></div>
-                <div class="col-4 short-info-card-center"><span class="badge badge-success">#VALUE ADD</span></div>
-                <div class="col-4 short-info-card-center"><span class="badge badge-success">#FREELANCE</span></div>
-                <div class="col-4 short-info-card-center"><span class="badge badge-success">#LEARNING</span></div>
-                <div class="col-4 short-info-card-center"><span class="badge badge-success">#TEAMPLAYER</span></div>
-                <div class="col-4 short-info-card-center"><span class="badge badge-success">#ARGENTINA</span></div>
               </div>
-              <br />
+            </div>
+            <!-- <div class="row container mt-0">
+              <div class="col-12 col-sm-12 col-md-6">
+                <div class="skills-container">
+                  <h5 class="card-title text-center skills-title text-white">
+                    Hard Skills
+                  </h5>
+                  <p class="card-text">
+                    <i class="fas fa-check-square check"></i> HTML <br />
+                    <i class="fas fa-check-square check"></i> CSS <br />
+                    <i class="fas fa-check-square check"></i> JavaScript <br />
+                    <i class="fas fa-check-square check"></i> Wordpress Custom Themes <br />
+                    <i class="fas fa-spinner check"></i> React (on formation) <br />
+                    <i class="fas fa-spinner check"></i> Node.JS (on formation) <br />
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-sm-12 col-md-6">
+                <div class="skills-container">
+                  <h5 class="card-title text-center skills-title text-white">
+                    Soft Skills
+                  </h5>
+                  <p class="card-text">
+                    <i class="fas fa-check-square check"></i> Problem Solving Orientation <br />
+                    <i class="fas fa-check-square check"></i> Hard Work <br />
+                    <i class="fas fa-check-square check"></i> Team Player <br />
+                    <i class="fas fa-check-square check"></i> Experience in many areas <br />
+                  </p>
+                </div>
+
+              </div>
+            </div> -->
+          </div>
+
+          <div class="container row">
+            <div class="card know-more col-12 text-center mb-5 border-0 p-0">
+              <h5 class="l-about-knowmore">
+                Need more?
+                <div class="container box-animate">
+                  <i class="fas fa-angle-double-down"></i>
+                </div>
+              </h5>
+            </div>
+            <div class="row acordeon hidden">
+              <div class="col-12 col-sm-6 col-md-4">
+                <img src="/img/TKD.jpg" class="card-img-top" alt="Taekwon-Do ITF" />
+                <div class="card-body">
+                  <p class="card-text text-justify">
+                    I'm Taekwon-Do ITF 2nd Dan Black Belt who loves to compete, gold panamerican medalist in sparring
+                    (Santos 2018).
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4">
+                <img src="/img/bass1.jpg" class="card-img-top" alt="Playing bass" />
+                <div class="card-body">
+                  <p class="card-text text-justify">
+                    Also loves music and play bass in Reggae/ Rock/ Blues bands for many years.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4">
+                <img src="/img/profile3.jpg" class="card-img-top" alt="Taekwon-Do ITF" />
+                <div class="card-body">
+                  <p class="card-text text-justify">Sometimes my beard dissapears ... but never last too long!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="container row">
+            <div class="accordion col-12" id="accordionExample">
+              <div class="accordion-item">
+                <h5 class="accordion-header text-center" id="headingOne">
+                  <a
+                    class="accordion-button more-info mt-3 mb-3"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    <div class="card border-0 p-0">
+                      Want to know more?
+                      <div class="container box-animate">
+                        <i class="fas fa-angle-double-down"></i>
+                      </div>
+                    </div>
+                  </a>
+                </h5>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <div class="row">
+                      <div class="col-12 col-sm-6 col-md-4">
+                        <img src="/img/TKD.jpg" class="card-img-top" alt="Taekwon-Do ITF" />
+                        <div class="card-body">
+                          <p class="card-text text-justify">
+                            I'm Taekwon-Do ITF 2nd Dan Black Belt who loves to compete, gold panamerican medalist in
+                            sparring (Santos 2018).
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4">
+                        <img src="/img/bass1.jpg" class="card-img-top" alt="Playing bass" />
+                        <div class="card-body">
+                          <p class="card-text text-justify">
+                            Also loves music and play bass in Reggae/ Rock/ Blues bands for many years.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4">
+                        <img src="/img/profile3.jpg" class="card-img-top" alt="Taekwon-Do ITF" />
+                        <div class="card-body">
+                          <p class="card-text text-justify">
+                            Sometimes my beard dissapears ... but never last too long!
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio section -->
+
+    <div id="portfolio"></div>
+    <div class="mt-5 card container text-center text-white">
+      <h4 class="my-3"><i class="fas fa-briefcase mr-1"></i> Portfolio</h4>
+
+      <div class="container mt-0 more-rounded">
+        <div class="row">
+          <div class="mb-3 card col-12 col-sm-6 col-md-4">
+            <img src="/img/portfolio.png" class="card-img-top mt-3 more-rounded zoom" alt="This Portfolio" />
+            <div class="card-body">
+              <div class="mt-1 mb-2 row">
+                <div class="col-12 text-center mb-2">
+                  <a class="btn button-green disabled" style="width: 100%"><i class="fas fa-link mr-1"></i> Link</a>
+                </div>
+                <div class="col-12 text-center">
+                  <a
+                    href="https://github.com/DG27AR/portfolio"
+                    target="_blank"
+                    class="btn button-purple"
+                    style="width: 100%"
+                    ><i class="fab fa-github mr-1"></i> Repo</a
+                  >
+                </div>
+              </div>
+              <p class="text-muted mb-0">01/2021</p>
+              <h5 class="card-title">Portfolio</h5>
+              <p class="card-text">This portfolio, looking to be minimalist and easy to read.</p>
+            </div>
+          </div>
+          <div class="mb-3 card col-12 col-sm-6 col-md-4">
+            <img src="/img/fidenoa.png" class="card-img-top mt-3 more-rounded zoom" alt=".Fidenoa.ar" />
+            <div class="card-body">
+              <div class="mt-1 mb-2 row">
+                <div class="col-12 text-center mb-2">
+                  <a href="https://fidenoa.ar" target="_blank" class="btn button-green" style="width: 100%"
+                    ><i class="fas fa-link mr-1"></i> Link</a
+                  >
+                </div>
+                <div class="col-12 text-center">
+                  <a
+                    href="https://github.com/DG27AR/fidenoa.ar"
+                    target="_blank"
+                    class="btn button-purple"
+                    style="width: 100%"
+                    ><i class="fab fa-github mr-1"></i> Repo</a
+                  >
+                </div>
+              </div>
+              <p class="text-muted mb-0">11/2020</p>
+              <h5 class="card-title">Fidenoa.ar</h5>
+              <p class="card-text">A custom Wordpress theme for a health care foundation.</p>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- About Me End -->
-
-    <!-- Skills Logo Start -->
-    <article class="container mt-3 mb-5">
-      <div class="row">
-        <!-- Logo Start -->
-        <div class="col-4 col-sm-3 col-md-2 text-center">
-          <i class="fab fa-html5 display-1"></i>
-        </div>
-        <!-- Logo End -->
-
-        <!-- Logo Start -->
-        <div class="col-4 col-sm-3 col-md-2 text-center">
-          <i class="fab fa-css3-alt display-1"></i>
-        </div>
-        <!-- Logo End -->
-
-        <!-- Logo Start -->
-        <div class="col-4 col-sm-3 col-md-2 text-center">
-          <i class="fab fa-bootstrap display-1"></i>
-        </div>
-        <!-- Logo End -->
-
-        <!-- Logo Start -->
-        <div class="col-4 col-sm-3 col-md-2 text-center">
-          <i class="fab fa-js-square display-1 mx-auto"></i>
-        </div>
-        <!-- Logo End -->
-
-        <!-- Logo Start -->
-        <div class="col-4 col-sm-3 col-md-2 text-center">
-          <i class="fab fa-wordpress display-1"></i>
-        </div>
-        <!-- Logo End -->
-
-        <!-- Logo Start -->
-        <div class="col-4 col-sm-3 col-md-2 text-center">
-          <i class="fab fa-git display-1"></i>
-        </div>
-        <!-- Logo End -->
-      </div>
-    </article>
-    <!-- Skills Logo End -->
-
-    <!-- Portfolio Start -->
-    <div id="portfolio"></div>
-    <div class="container card my-5">
-      <h4 class="text-center mt-1 text-white">Portfolio</h4>
-      <table class="table table-hover">
-        <thead>
-          <tr class="table-success">
-            <th scope="row" class="text-center">Project</th>
-            <td class="text-center">Date</td>
-            <td>Details</td>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">PORTFOLIO</th>
-            <td class="text-center">01/2021</td>
-            <td class="text-justify">This portfolio.</td>
-          </tr>
-          <tr class="table-secondary">
-            <th scope="row" class="text-center">
-              <!-- <a class="btn btn-info" target="_blank" href="https://dg27ar.github.io/"
-                ><i class="fas fa-link mr-1"></i>Site</a
-              > -->
-            </th>
-            <td class="text-center">
-              <a class="btn btn-info" target="_blank" href="https://github.com/DG27AR/dg27ar.github.io"
-                ><i class="fab fa-github mr-1"></i>Repo</a
-              >
-            </td>
-            <td class="text-center">
-              <div class="container row">
-                <div class="col-12 col-sm-4 col-md-3 col-lg-2 short-info-card-center">
-                  <span class="badge badge-warning">#HTML&CSS</span>
-                </div>
-                <div class="col-12 col-sm-4 col-md-3 col-lg-2 short-info-card-center">
-                  <span class="badge badge-primary badge-color-goldenrod">#JAVASCRIPT</span>
-                </div>
-                <div class="col-12 col-sm-4 col-md-3 col-lg-2 short-info-card-center">
-                  <span class="badge badge-primary">#RESPONSIVE</span>
-                </div>
-                <div class="col-12 col-sm-4 col-md-3 col-lg-2 short-info-card-center">
-                  <span class="badge badge-info">#BOOTSTRAP</span>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">FIDENOA</th>
-            <td class="text-center">11/2020</td>
-            <td class="text-justify">A custom Wordpress theme for a health care foundation.</td>
-          </tr>
-          <tr class="table-secondary">
-            <th scope="row" class="text-center">
-              <a class="btn btn-success" target="_blank" href="https://fidenoa.ar"
-                ><i class="fas fa-link mr-1"></i>Site</a
-              >
-            </th>
-            <td class="text-center">
-              <a class="btn btn-info" target="_blank" href="https://github.com/DG27AR/fidenoa.ar"
-                ><i class="fab fa-github mr-1"></i>Repo</a
-              >
-            </td>
-            <td class="text-center">
-              <div class="container row">
-                <div class="col-12 col-sm-4 col-md-3 col-lg-2 short-info-card-center">
-                  <span class="badge badge-warning">#HTML&CSS</span>
-                </div>
-                <div class="col-12 col-sm-4 col-md-3 col-lg-2 short-info-card-center">
-                  <span class="badge badge-primary">#RESPONSIVE</span>
-                </div>
-                <div class="col-12 col-sm-4 col-md-3 col-lg-2 short-info-card-center">
-                  <span class="badge badge-info">#BOOTSTRAP</span>
-                </div>
-                <div class="col-12 col-sm-4 col-md-3 col-lg-2 short-info-card-center">
-                  <span class="badge badge-primary">#WORDPRESS</span>
-                </div>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
     </div>
-    <!-- Portfolio End -->
 
     <!-- Footer Start -->
+    <div id="contact-me"></div>
     <footer class="mt-5">
       <div class="container-fluid text-white py-3 card">
         <div class="container">
           <div class="container text-center my-3">
-            <h4 class="font-bold contact-me-title">Contact Me</h4>
+            <h4 class="font-bold contact-me-title"><i class="fas fa-satellite mr-1"></i> Contact Me</h4>
           </div>
 
           <form class="needs-validation" action="https://formspree.io/f/xnqolora" method="POST" novalidate>
             <div class="mb-3">
               <label for="validationCustom01" class="form-label">Email address</label>
-              <input type="email" name="_replyto" class="form-control" id="validationCustom01" required />
-              <div class="invalid-feedback">Please, provide an email direction.</div>
+              <input type="email" name="_replyto" class="form-control more-rounded" id="validationCustom01" required />
+              <div class="invalid-feedback">Please, provide a valid email direction.</div>
             </div>
             <div class="mb-3">
               <label for="validationCustom02" class="form-label">Your Message</label>
-              <textarea class="form-control" name="message" id="validationCustom02" rows="3" required></textarea>
-              <div class="invalid-feedback">Please, write your message here, 5 characters min and 500 max.</div>
+              <textarea
+                class="form-control more-rounded"
+                name="message"
+                id="validationCustom02"
+                rows="14"
+                required
+              ></textarea>
+              <div class="invalid-feedback">Please, write your message here.</div>
             </div>
 
-            <button type="submit" class="btn btn-info mt-3">Submit</button>
+            <button type="submit" class="btn btn-info mt-3 more-rounded button-purple">Submit</button>
           </form>
         </div>
 
@@ -323,7 +391,12 @@
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
     ></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/bootstrap.min.js"></script>
 
     <script>
       window.sr = ScrollReveal();
@@ -379,5 +452,6 @@
         });
       })();
     </script>
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -12,7 +12,7 @@ body {
 
 /* Comet Style */
 .comet-green {
-  color: forestgreen;
+  color: lightgreen;
 }
 
 /* Header Styles */
@@ -29,7 +29,7 @@ body {
 .header-text {
   text-align: center;
   position: absolute;
-  top: 40%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -53,12 +53,33 @@ body {
 }
 
 .short-info-card-img {
-  background-image: url(../img/profile.jpg);
+  background-image: url(../img/profile5.jpg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   min-width: 30%;
   min-height: 250px;
+}
+
+.more-info-card-img {
+  background-image: url(../img/TKD.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 30%;
+  min-height: 250px;
+}
+
+.more-info {
+  background-color: rgba(0, 0, 0, 0);
+  color: silver;
+  border: 0;
+}
+
+.more-info:hover {
+  transition-duration: 0.2s;
+  color: darkgrey;
+  text-decoration: none;
 }
 
 .short-info-sign {
@@ -71,4 +92,119 @@ body {
 
 .badge-color-goldenrod {
   background-color: goldenrod;
+}
+
+/* Other General Styles*/
+
+.more-rounded {
+  border-radius: 0.5em;
+}
+
+.button-purple {
+  background-color: rgba(216, 112, 147, 0.8);
+  border-color: rgba(215, 140, 165, 0.8);
+  color: white;
+}
+
+.button-purple:hover {
+  background-color: rgba(227, 51, 109, 0.8);
+  border-color: rgb(207, 106, 140);
+  transition-duration: 0.4s;
+  color: white;
+}
+
+.button-green {
+  background-color: rgba(144, 238, 144, 0.8);
+  border-color: rgba(144, 238, 144, 0.8);
+  color: lightgreen;
+  color: white;
+}
+
+.button-green:hover {
+  background-color: rgba(44, 229, 44, 0.8);
+  border-color: rgba(93, 229, 93, 0.8);
+  transition-duration: 0.4s;
+  color: white;
+}
+
+/* Angle Animation on more about me */
+
+.box-animate {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 35%);
+  animation-name: pippo;
+  animation-duration: 1.2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes pippo {
+  0% {
+    top: 55%;
+  }
+  100% {
+    top: 60%;
+  }
+}
+
+.want-to {
+  border: 0px;
+
+  text-decoration: none;
+}
+
+/* Animaton for Portfolio items */
+.zoom {
+  transition: transform 0.2s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.05);
+}
+
+/* Skills */
+
+.sandia {
+  background-color: rgba(216, 112, 147, 0.8);
+}
+
+.skills-container {
+  display: block;
+  position: relative;
+  margin: 40px 0;
+  border-left: 34px solid rgba(216, 112, 147, 0.8);
+  padding-left: 10px;
+  min-height: 10em;
+}
+
+.skills-title {
+  background: rgba(216, 112, 147, 0.8);
+  padding: 5px 10px;
+  margin: 0 0 10px 0;
+  line-height: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  /* Border is the new background */
+  background: none;
+
+  /* Rotate from top left corner (not default) */
+  transform-origin: 0 0;
+  transform: rotate(90deg);
+}
+
+/* acordion classes */
+
+.hidden {
+  /* height: 0px; */
+  display: none;
+  overflow: hidden;
+}
+
+.acordeon {
+  transition: all 0.2s ease-in-out;
 }
