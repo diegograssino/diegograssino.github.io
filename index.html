@@ -124,6 +124,14 @@
         <div class="row no-gutters">
           <div class="col-md-4 more-rounded text-center">
             <i class="fas fa-user-astronaut mt-5 mx-0" style="font-size: 16em; color: lightgreen"></i>
+            <div class="col-12 text-center mt-4">
+              <a
+                class="btn btn-lg btn-info more-rounded button-purple l-about-button"
+                href="assets/CV DG ES 01-2022.pdf"
+                download
+                >Resumee Download</a
+              >
+            </div>
           </div>
           <div class="col-md-8">
             <div class="card-body about-me-content">
@@ -138,15 +146,6 @@
                 visiting!.
               </p>
               <div class="row">
-                <div class="col-12 text-center">
-                  <a
-                    class="btn btn-lg btn-info more-rounded button-purple l-about-button"
-                    href="assets/CV DG ES 01-2022.pdf"
-                    download
-                    >Resumee Download</a
-                  >
-                </div>
-
                 <!-- <div class="col-12 text-center">
                   <span class="badge badge-pill badge-primary sandia mx-1 my-1" style="font-size: 1.1em">#HTML</span>
                   <span class="badge badge-pill badge-primary sandia mx-1 my-1" style="font-size: 1.1em">#CSS</span>
@@ -186,7 +185,8 @@
                     <i class="fas fa-check-square check"></i> Problem Solving Orientation <br />
                     <i class="fas fa-check-square check"></i> Hard Work <br />
                     <i class="fas fa-check-square check"></i> Team Player <br />
-                    <i class="fas fa-check-square check"></i> Experience in many areas <br />
+                    <i class="fas fa-check-square check"></i> Experience in many areas working with agile methodologies
+                    <br />
                   </p>
                 </div>
               </div>
@@ -355,7 +355,7 @@
             <h4 class="font-bold contact-me-title"><i class="fas fa-satellite mr-1"></i> Contact Me</h4>
           </div>
 
-          <form class="needs-validation" action="https://formspree.io/f/xnqolora" method="POST" novalidate>
+          <form id="myForm" class="needs-validation" action="https://formspree.io/f/xnqolora" method="POST" novalidate>
             <div class="mb-3">
               <label for="validationCustom01" class="form-label needs-validation">Email address</label>
               <input type="email" name="_replyto" class="form-control more-rounded" id="validationCustom01" required />
@@ -385,6 +385,40 @@
       </div>
     </footer>
 
+    <!-- Modal section -->
+
+    <div id="okModal" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Thank you!</h5>
+          </div>
+          <div class="modal-body">
+            <p>I will answer your message as soon as posible!.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info more-rounded button-purple" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="errorModal" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Something went wrong!</h5>
+          </div>
+          <div class="modal-body">
+            <p>Please, complete the fields with a valid mail address (mail@server.com) and the message!.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info more-rounded button-purple" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -399,5 +433,6 @@
     <script src="js/validation.js"></script>
     <script src="js/scrollreveal.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/formspree.js"></script>
   </body>
 </html>
