@@ -414,7 +414,7 @@
 
           <form class="needs-validation" action="https://formspree.io/f/xnqolora" method="POST" novalidate>
             <div class="mb-3">
-              <label for="validationCustom01" class="form-label">Email address</label>
+              <label for="validationCustom01" class="form-label needs-validation">Email address</label>
               <input type="email" name="_replyto" class="form-control more-rounded" id="validationCustom01" required />
               <div class="invalid-feedback">Please, provide a valid email direction.</div>
             </div>
@@ -457,61 +457,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="/js/bootstrap.min.js"></script>
-
-    <script>
-      window.sr = ScrollReveal();
-      sr.reveal('.navbar', {
-        duration: 2000,
-        origin: 'top',
-      });
-      sr.reveal('.header-title', {
-        duration: 2000,
-        origin: 'rigth',
-        distance: '300px',
-      });
-      sr.reveal('.header-subtitle', {
-        duration: 2000,
-        origin: 'left',
-        distance: '300px',
-      });
-      sr.reveal('.header-button', {
-        duration: 2000,
-        origin: 'bottom',
-        delay: 750,
-      });
-      sr.reveal('.about-me-content', {
-        duration: 2000,
-        origin: 'right',
-        distance: '300px',
-      });
-    </script>
-
-    <!-- Bootstrap Validation -->
-    <script>
-      // Example starter JavaScript for disabling form submissions if there are invalid fields
-      (function () {
-        'use strict';
-
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.querySelectorAll('.needs-validation');
-
-        // Loop over them and prevent submission
-        Array.prototype.slice.call(forms).forEach(function (form) {
-          form.addEventListener(
-            'submit',
-            function (event) {
-              if (!form.checkValidity()) {
-                event.preventDefault();
-                event.stopPropagation();
-              }
-
-              form.classList.add('was-validated');
-            },
-            false
-          );
-        });
-      })();
-    </script>
+    <script src="js/validation.js"></script>
+    <script src="js/scrollreveal.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
