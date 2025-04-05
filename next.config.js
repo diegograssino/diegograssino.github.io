@@ -1,15 +1,14 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === "production";
+
 const nextConfig = {
+  reactStrictMode: true,
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "imgur.com",
-        port: "",
-        pathname: "**",
-      },
-    ],
+    unoptimized: true, // Disable default image optimization
   },
+  assetPrefix: isProd ? "/your-repository-name/" : "",
+  basePath: isProd ? "/your-repository-name" : "",
+  output: "export",
 };
 
 module.exports = nextConfig;
